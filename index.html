@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Formulario de registro</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container-left">
+      <div class="title-container">
+        <h1>en una galaxia muy, muy lejana...</h1>
+      </div>
+      <p>
+        Photo from
+        <a
+          href="https://unsplash.com/es/fotos/n8EBy1hXdTI"
+          target="_blank"
+          rel="https://unsplash.com/es/@jimtegman"
+          >unsplash</a
+        >
+        by
+        <a
+          href="https://unsplash.com/es/@jimtegman"
+          target="_blank"
+          rel="noopener noreferrer"
+          >/@jimtegman</a
+        >
+      </p>
+    </div>
+    <div class="container-right">
+      <div class="p-container">
+        <h1>¡La orden Jedi te necesita..!</h1>
+        <p>
+            Estás en lo correcto, joven Padawan. El panorama ha cambiado drásticamente después de la caída de la República y el ascenso del Imperio Galáctico. Pero en tiempos oscuros como estos, el deber de los Jedi persiste, y siempre estaremos dispuestos a ayudar.
+        </p>
+        <p>
+          Registrate <em>ahora</em> y crea una cuenta para que vuelva la galaxia al lado luminoso.
+        </p>
+      </div>
+      <div class="mid-container">
+        <h3>¡Te necesito, padawan!</h3>
+
+        <form action="#" method="post" id="sign-up">
+          <div class="top-form">
+            <div class="input-flex">
+              <label for="first-name">Nombre</label>
+              <input
+                type="text"
+                id="first-name"
+                placeholder="Juan"
+                pattern="^([a-ZA-Z]+)$"
+                required
+              />
+            </div>
+
+            <div class="input-flex">
+              <label for="last-name">Apellido</label>
+              <input
+                type="text"
+                id="last-name"
+                placeholder="Perez"
+                pattern="^([a-ZA-Z]+)$"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="mid-form">
+            <div class="input-flex">
+              <label for="email">Email</label>
+              <input
+                type="text"
+                id="email"
+                placeholder="email@holonet.sw   "
+                pattern="^([\w\.-_]+)@([\w-]+)\.([a-zA-Z]{2,5})([\.][a-zA-Z]{2,5})?$"
+                required
+              />
+            </div>
+
+            <div class="input-flex">
+              <label for="tel">Numero telefonico</label>
+              <input
+                type="tel"
+                id="tel"
+                placeholder="1138"
+                pattern="^([\d]{3})[\-]?([\d]{3})[\-]?([\d]{4})$"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="bottom-form">
+            <div class="input-flex">
+              <label for="password">Contraseña</label>
+              <input
+                type="password"
+                id="password"
+                placeholder="********"
+                class="passwordInput"
+                required
+              />
+              <span id="pass_strength" class="badge displayBadge"
+                >...</span
+              >
+              <p id="pass_requirements">
+                *La contraseña debe incluir al menos una letra mayúscula, un número y un carácter especial  </p>
+            </div>
+
+            <div class="input-flex">
+              <label for="password">Confirma la contraseña</label>
+              <input
+                type="password"
+                id="password_confirm"
+                placeholder="********"
+                required
+              />
+              <p id="pass_match"></p>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="button-container">
+        <div class="button-transform">
+          <button type="submit" form="sign-up">Crea una cuenta</button>
+        </div>
+        <p>
+          Ya tienes una?
+          <a
+            href="https://github.com/pazrojasr"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Log in</a
+          >
+        </p>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
